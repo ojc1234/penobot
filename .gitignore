@@ -131,4 +131,4 @@ $RECYCLE.BIN/
 .DS_Store
 
 _NCrunch*
-/config/config.json
+config.json/

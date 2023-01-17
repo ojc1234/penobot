@@ -28,7 +28,7 @@ namespace penodiscordbot
 
 		public async Task MainAsync()
 		{
-			await _client.LoginAsync(TokenType.Bot, "MTA2NDg3NjUxMDYyMTczNzA0MQ.G6MB3E.taYaEt7oce21nuAeP_vDJJ4Rqp849s2dF_lvIs");
+			await _client.LoginAsync(TokenType.Bot, new token().discordtoken);
 			await _client.StartAsync();
 
 			await Task.Delay(-1);

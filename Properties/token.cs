@@ -15,7 +15,7 @@ namespace penodiscordbot
                 text= FileBuffer == "\n" ? "01" : FileBuffer;
             }
             catch {
-                text = "00";
+                text = "000";
             }
             this.discordtoken = text;
         }

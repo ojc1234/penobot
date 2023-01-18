@@ -14,7 +14,7 @@ namespace penodiscordbot
             }
             if (setting == 1)
             {
-                request.htmlParser(request.ahaUrl("hello"));
+             Console.WriteLine(request.Diction(request.ahaUrl("hello")).mean);
             }
             if (setting == 2)
             {

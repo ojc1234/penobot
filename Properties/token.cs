@@ -7,9 +7,9 @@ namespace penodiscordbot
         public string discordtoken;
         public token()
         {
-            string FileRoute = "D:\\codingstudy\\penomiDiscordBot\\penodiscordbot\\config\\config.json";
+            string FileRoute = @"C:\Users\¿ÀÁö¿ë\Desktop\token.txt";
             string FileBuffer;
-                string text;
+            string text;
             try {
                 FileBuffer = File.ReadAllText(FileRoute);
                 text= FileBuffer == "\n" ? "01" : FileBuffer;

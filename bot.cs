@@ -3,7 +3,7 @@ using Discord.WebSocket;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-
+using penodiscordbot;
 namespace penodiscordbot
 {
     internal class bot
@@ -57,8 +57,11 @@ namespace penodiscordbot
                 {
                     await message.Channel.SendMessageAsync("Not found");
                 }
-                await message.Channel.SendMessageAsync(embed: new discordEmbed()?.dictEmbed(diction)?.Build());
-            }
+                else
+                {
+                    await message.Channel.SendMessageAsync(embed: new discordEmbed()?.dictEmbed(diction)?.Build());
+                }
+                }
         }
     }
 }

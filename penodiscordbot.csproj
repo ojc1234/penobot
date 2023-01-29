@@ -24,4 +24,7 @@
   <ItemGroup>
     <Compile Remove="config\token.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="matrix\" />
+  </ItemGroup>
 </Project>

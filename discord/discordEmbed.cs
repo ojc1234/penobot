@@ -1,7 +1,6 @@
 ﻿using Discord;
 using System.Collections.Generic;
-
-namespace penodiscordbot
+namespace penodiscordbot.discord
 {
     internal class discordEmbed
     {

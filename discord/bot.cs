@@ -4,7 +4,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using penodiscordbot;
-namespace penodiscordbot
+namespace penodiscordbot.discord
 {
     internal class bot
     {
@@ -20,7 +20,7 @@ namespace penodiscordbot
 
             _client.Log += Log;
             _client.Ready += Ready;
-            _client.MessageReceived += MessageReceivedAsync;
+            _client.MessageReceived += new botMessage(_client).MessageReceivedAsync;
         }
 
         public async Task MainAsync()
@@ -44,24 +44,6 @@ namespace penodiscordbot
             return Task.CompletedTask;
         }
 
-        private async Task MessageReceivedAsync(SocketMessage message)
-        {
-            if (message.Author.Id == _client.CurrentUser.Id)
-                return;
 
-            if (message.Content.FirstOrDefault().ToString() == "!")
-            {
-                var diction = request.Diction(message.Content.Substring(1));
-
-                if (diction.phenomenon?.discordString() == null)
-                {
-                    await message.Channel.SendMessageAsync("Not found");
-                }
-                else
-                {
-                    await message.Channel.SendMessageAsync(embed: new discordEmbed()?.dictEmbed(diction)?.Build());
-                }
-                }
-        }
     }
 }

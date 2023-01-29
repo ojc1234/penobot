@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using penodiscordbot.discord;
 namespace penodiscordbot
 {
     class Program
@@ -21,7 +22,7 @@ namespace penodiscordbot
             }
             if (setting == 3)
             {
-                var martix2d = new martix.martix(new List<int> { 1, 2 }, new List<int> { 3, 4 });
+                var martix2d = new matrix.Matrix(new List<int> { 1, 2 }, new List<int> { 3, 4 });
                 martix2d.Write();
             }
         }

@@ -133,3 +133,5 @@ $RECYCLE.BIN/
 _NCrunch*
 config.json/
 .vs/
+bin/
+obj/

@@ -3,7 +3,7 @@ using Discord.WebSocket;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using penodiscordbot;
+using penodiscordbot.config;
 namespace penodiscordbot.discord
 {
     internal class bot

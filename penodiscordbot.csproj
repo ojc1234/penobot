@@ -22,9 +22,6 @@
     <PackageReference Include="Microsoft.Windows.Compatibility" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Remove="config\token.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="matrix\" />
   </ItemGroup>
 </Project>

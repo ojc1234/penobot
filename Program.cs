@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using penodiscordbot.discord;
+using penodiscordbot.config;
 namespace penodiscordbot
 {
     class Program

@@ -106,3 +106,4 @@ C:\coding\penobot\obj\Debug\net7.0-windows\refint\penodiscordbot.dll
 C:\coding\penobot\obj\Debug\net7.0-windows\penodiscordbot.pdb
 C:\coding\penobot\obj\Debug\net7.0-windows\penodiscordbot.genruntimeconfig.cache
 C:\coding\penobot\obj\Debug\net7.0-windows\ref\penodiscordbot.dll
+C:\coding\penobot\obj\Debug\net7.0-windows\penodiscordbot.Component1.resources
